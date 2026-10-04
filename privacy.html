@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FORGE Privacy Policy</title>
+<style>
+:root { color-scheme: light dark; }
+body { max-width: 720px; margin: 0 auto; padding: 24px 16px 48px; font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+h1 { font-size: 1.7rem; margin-bottom: 0; }
+h2 { font-size: 1.15rem; margin-top: 2rem; }
+.meta { opacity: .7; margin-top: .25rem; }
+</style>
+</head>
+<body>
+<h1>FORGE Privacy Policy</h1>
+<p class="meta">Effective date: October 4, 2026</p>
+
+<p>FORGE is a personal health tracker for food, workouts, water, sleep and weight. This policy explains what data the app uses and who receives it. Contact: <strong>ForgeSupp@proton.me</strong>.</p>
+
+<h2>1. Data that stays on your phone</h2>
+<p>FORGE has no accounts. Your food log, workouts, weight, sleep, water, goals and settings are stored on your device only. We do not receive them and we cannot read them. They are not included in cloud backups or device transfers.</p>
+
+<h2>2. Data sent to our server</h2>
+<p>The app talks to a server we run (a Cloudflare Worker) in these cases:</p>
+<ul>
+<li><strong>AI features (only after you allow them).</strong> Photo analysis sends the meal photo. AI search sends the food text you type. Meal plans send your calorie and macro goals and any preferences you type. The server forwards these to Google Gemini to get a result. We do not store your photos or text. Photos are stripped of location and camera metadata on your phone before sending. You can turn AI features off in Settings.</li>
+<li><strong>Barcode scans.</strong> The barcode number is sent to our server, which looks it up in Open Food Facts.</li>
+<li><strong>Device identifier.</strong> The app creates a random identifier for your device. It is used to sign requests, enforce daily limits, and link your purchase to your plan. It is not your name, email or advertising ID.</li>
+<li><strong>Device integrity checks.</strong> To block abuse, the app asks Google Play Integrity (Android) or Apple App Attest / DeviceCheck (iOS) to confirm that the app is genuine. The result is sent to our server.</li>
+<li><strong>IP address.</strong> Your IP address is processed temporarily to apply abuse and rate limits.</li>
+<li><strong>Anonymous usage counts (optional, off by default).</strong> If you turn this on in Settings, the app sends counts of feature use, with no personal content.</li>
+</ul>
+
+<h2>3. Health data</h2>
+<p>If you allow it, FORGE reads your weight and sleep from Health Connect (Android) or Apple Health (iOS). This data is used only inside the app on your phone. FORGE never writes to Apple Health, and health data is not sent to our server, to advertisers, or to any third party. You can revoke access at any time in your phone's settings.</p>
+
+<h2>4. Third-party services</h2>
+<ul>
+<li><strong>Google Gemini</strong> processes AI requests sent through our server.</li>
+<li><strong>Open Food Facts</strong> provides barcode product data.</li>
+<li><strong>Google AdMob</strong> shows ads on the free plan. It may use your advertising ID and device information. On iOS, ads that track you appear only if you allow tracking when asked. Paid plans have no ads.</li>
+<li><strong>RevenueCat</strong> manages subscriptions and receives your random device identifier and purchase status. Payments are handled by Google Play or the Apple App Store, and we never see your payment details.</li>
+<li><strong>Sentry</strong> may receive crash and error reports, which can include device model, OS version and app version.</li>
+<li><strong>Cloudflare</strong> hosts our server.</li>
+</ul>
+<p>These services have their own privacy policies.</p>
+
+<h2>5. Permissions</h2>
+<ul>
+<li><strong>Camera:</strong> scan barcodes and take meal photos.</li>
+<li><strong>Photos:</strong> pick a meal photo, and save progress cards if you choose to.</li>
+<li><strong>Notifications and alarms:</strong> reminders you set.</li>
+<li><strong>Health data:</strong> read weight and sleep, as described above.</li>
+<li><strong>Internet:</strong> AI features, barcode lookup, ads and purchases.</li>
+</ul>
+
+<h2>6. Your choices and deletion</h2>
+<p>You can turn off AI features and usage counts, decline tracking, revoke permissions, and clear all app data in Settings. Uninstalling the app removes the data on your phone. Because we do not keep your entries, photos or text on our server, there is nothing there to delete. For questions about data tied to your device identifier, contact us.</p>
+
+<h2>7. Security</h2>
+<p>All connections use HTTPS, requests are signed, and the server checks that requests come from a genuine app. No method is perfectly secure.</p>
+
+<h2>8. Children</h2>
+<p>FORGE is not directed to children under 13, and we do not knowingly collect data from them.</p>
+
+<h2>9. Changes</h2>
+<p>We may update this policy. The effective date above shows the latest version.</p>
+
+<h2>10. Contact</h2>
+<p><strong>ForgeSupp@proton.me</strong></p>
+</body>
+</html>
