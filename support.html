@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="forge-app-version" content="3.1.5">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Help with FORGE installation, subscriptions, backups and food, water, workout, sleep and weight tracking.">
 <title>FORGE Support</title>
@@ -11,7 +12,7 @@
 <body data-page="support">
 <a class="skip" href="#main-content">Skip to content</a>
 <header class="site-header">
-<div class="brand-row"><a class="brand" href="support.html">FORGE</a><span class="publisher">by H4zem</span></div>
+<div class="brand-row"><a class="brand" href="./" aria-label="FORGE home">FORGE</a><span class="publisher">by H4zem</span></div>
 <nav class="site-nav" aria-label="FORGE information"><a href="support.html" aria-current="page">Support</a><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a></nav>
 <div class="hero"><p class="eyebrow">Here to help</p><h1>How can we help?</h1><p class="intro">Support for your food, workouts, water, sleep and weight journal.</p></div>
 </header>
@@ -31,21 +32,24 @@
 </ol>
 </section>
 <section id="subscriptions" aria-labelledby="subscriptions-title">
-<h2 id="subscriptions-title">Purchases and subscriptions</h2>
-<p>The Windows version uses Microsoft Store subscriptions. Use the same Microsoft account that made your purchase and try the restore-purchases option in FORGE's Settings if your plan is not recognized.</p>
+<h2 id="subscriptions-title">Free tracking and Pro subscriptions</h2>
+<p>FORGE 3.1.5 keeps local tracking, barcode lookup, history, progress, Replay and backup/export free on all supported platforms. Pro adds food AI, meal plans and training tools; expiration does not lock your journal.</p>
+<p>Pro is offered monthly or annually through the platform Store. The Windows version uses Microsoft Store subscriptions. Use the same Microsoft account that made your purchase and try the restore-purchases option in FORGE's Settings if your plan is not recognized.</p>
 <p>Manage recurring billing and cancellation at <a href="https://account.microsoft.com/services">Microsoft account services and subscriptions</a>. For Android or iOS purchases, use the subscription settings in the store where you purchased.</p>
 <p>Uninstalling FORGE does not cancel a subscription. Refund requests are handled by the store where you paid. If a restore fails, send support the error message rather than your receipt or purchase token.</p>
 </section>
 <section id="data" aria-labelledby="data-title">
 <h2 id="data-title">Back up your journal before reinstalling</h2>
 <p>Your journal is stored locally on your device. Before uninstalling, resetting Windows, clearing app data or moving devices, use the backup/export option in Settings and save the file somewhere you control.</p>
-<p>Use the restore option in Settings to import a FORGE backup. Read the replacement warning before confirming. Keep backup files private because they can contain your health information.</p>
+<p>Use Settings to export JSON backups or filtered CSV history. Optional local snapshots retain up to seven recent daily copies on the same device; clearing the journal removes them, and they do not replace an external backup. Use the restore option in Settings to import a FORGE JSON backup. Read the replacement warning before confirming. Keep backup files private because they can contain your health information.</p>
 <p>If data fails to load, try the app's recovery or retry action and contact support before clearing anything. We cannot recover a local journal from a server copy.</p>
 </section>
 <section aria-labelledby="features-title">
 <h2 id="features-title">AI, barcode and connection problems</h2>
 <ul>
-<li>AI features need your consent in Settings and an internet connection. Check the app's displayed allowance and error message.</li>
+<li>AI features need consent, an adult profile and an internet connection. Free includes 15 food-AI requests per UTC month; Pro includes 300 shared photo/search requests and 30 meal plans per subscription month. Annual plans refresh monthly. Check the displayed usage/reset time; reinstalling or restoring a subscription does not reset its allowance.</li>
+<li>Training generation uses a server rule engine and Pro access, with separate daily attempt limits. Saved templates remain available locally.</li>
+<li>If FORGE requires an update, install a compatible version from your Store. A cached minimum version may also apply offline.</li>
 <li>If a service is temporarily unavailable, try again later. Barcode coverage varies; you can enter a food manually if a product is missing.</li>
 <li>Check estimated calories, portions and nutrients before saving. AI output is an estimate, not medical advice.</li>
 </ul>
