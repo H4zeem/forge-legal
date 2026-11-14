@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="forge-app-version" content="3.1.5">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="FORGE Privacy Policy for FORGE by H4zem, a personal wellness journal for Windows, Android and iOS.">
 <title>FORGE Privacy Policy</title>
@@ -11,9 +12,9 @@
 <body data-page="privacy">
 <a class="skip" href="#main-content">Skip to content</a>
 <header class="site-header">
-<div class="brand-row"><a class="brand" href="support.html">FORGE</a><span class="publisher">by H4zem</span></div>
+<div class="brand-row"><a class="brand" href="./" aria-label="FORGE home">FORGE</a><span class="publisher">by H4zem</span></div>
 <nav class="site-nav" aria-label="FORGE information"><a href="support.html">Support</a><a href="privacy.html" aria-current="page">Privacy policy</a><a href="terms.html">Terms of use</a></nav>
-<div class="hero"><p class="eyebrow">Your trust matters</p><h1>Privacy Policy</h1><p class="meta">Effective date: 29 October 2026</p></div>
+<div class="hero"><p class="eyebrow">Your trust matters</p><h1>Privacy Policy</h1><p class="meta">Effective date: 14 November 2026</p></div>
 </header>
 <main id="main-content">
 <div class="summary"><p>FORGE is developed by H4zem. This policy covers the Windows, Android and iOS app and the server features we operate. Your journal is stored on your device. Selected online features send limited information as described below. FORGE has no separate email/password account.</p></div>
@@ -25,15 +26,17 @@
 <section aria-labelledby="privacy-2">
 <h2 id="privacy-2">2. When information leaves your device</h2>
 <h3>Optional AI features</h3>
-<p>Before using AI, FORGE asks for your consent. Photo analysis sends the selected food photo; AI food search sends your query; meal planning sends calorie and macro goals and the preferences you enter. Requests can include your requested language and technical app information. They pass through our Cloudflare Worker to Google Gemini. Do not include information you do not want processed by these services.</p>
+<p>Before using AI, FORGE asks for your consent. Photo analysis sends the selected food photo; AI food search sends your query; meal planning sends calorie and macro goals and the preferences you enter, including meal count, restrictions, excluded foods, preparation time, budget and cuisine. Requests can include your requested language and technical app information. They pass through our Cloudflare Worker to Google Gemini. Do not include information you do not want processed by these services.</p>
 <p>The app removes photo metadata, such as location and camera information, before sending supported images. Our Worker does not save AI photos, prompts or results as a hosted journal. Google processes requests under its own service terms and retention rules; this is not a promise of zero retention by Google. Review <a href="https://ai.google.dev/gemini-api/terms">Gemini API terms</a> and <a href="https://policies.google.com/privacy">Google's privacy policy</a>. AI consent can be withdrawn in Settings for future requests; withdrawal does not undo processing already completed.</p>
+<h3>Training plans</h3>
+<p>Training generation sends your selected goal, experience, equipment, weekly frequency, session duration, set count and exercise exclusions to our Worker. It uses a deterministic rule engine rather than Google Gemini. Saved templates and recorded workouts remain local unless you export/share them.</p>
 <h3>Barcode lookup</h3>
 <p>Barcode lookup sends the product barcode through our server to Open Food Facts. Product reference results may be cached locally and on our server. A barcode lookup does not upload your complete meal log or consumption history. See <a href="https://world.openfoodfacts.org/privacy">Open Food Facts privacy information</a>.</p>
 <h3>Subscriptions and purchase verification</h3>
-<p>Purchases and payments are handled by Microsoft Store, Google Play or Apple's App Store, depending on platform. The app and our server process Store purchase proofs, subscription status, product identifiers and a random installation/device identifier to verify access, restore purchases, handle payment problems and enforce plan allowances. Windows verification also involves Microsoft's Store services. We do not receive your full payment-card details. Server-cached purchase proofs are encrypted; entitlement information is also cached on your device.</p>
+<p>Purchases and payments are handled by Microsoft Store, Google Play or Apple's App Store, depending on platform. The app and our server process Store purchase proofs, subscription status, product identifiers and a random installation/device identifier to verify access, restore purchases, handle payment problems and enforce plan allowances. Windows verification also involves Microsoft's Store services. We do not receive your full payment-card details. Server-cached purchase proofs are encrypted; signed offline entitlement information is also cached on your device for up to seven days, bounded by the verified subscription expiry.</p>
 <h3>Security and service operation</h3>
-<p>Online features process your random device identifier or a hash derived from it, IP/network information, request timestamps/signatures, session tokens, app version and security or purchase-verification results. Android uses Google Play Integrity; iOS uses Apple App Attest/DeviceCheck where available. Windows access is tied to server-verified Microsoft Store purchases. These checks help prevent replay, fraud, quota abuse and unauthorized access. They are not a separate FORGE login.</p>
-<p>Daily allowance, rewarded-ad claim and abuse-prevention records are kept to operate those features. A hashed installation identifier may be sent to AdMob to verify a rewarded-ad credit. It is still an identifier, not a guarantee of anonymity.</p>
+<p>Online features process your random device identifier or a hash derived from it, IP/network information, request timestamps/signatures, session tokens, app version and security or purchase-verification results. Android uses Google Play Integrity; iOS uses Apple App Attest/DeviceCheck where available. Windows online sessions use Microsoft Store verification; local journal tracking is free. These checks help prevent replay, fraud, quota abuse and unauthorized access. They are not a separate FORGE login.</p>
+<p>Monthly allowance and daily abuse-prevention records operate online features. A restored Store subscription shares its allowance across installations. Free allowances remain installation-bound. Rewarded-ad credit issuance and verification are not provided.</p>
 </section>
 <section aria-labelledby="privacy-3">
 <h2 id="privacy-3">3. Health Connect and Apple Health</h2>
@@ -42,19 +45,19 @@
 </section>
 <section aria-labelledby="privacy-4">
 <h2 id="privacy-4">4. Advertising, analytics and diagnostics</h2>
-<p>On supported Android/iOS free-plan features, Google AdMob may process device and advertising identifiers, IP address, ad interactions and consent signals under <a href="https://policies.google.com/privacy">Google's privacy policy</a>. FORGE uses Google's consent/privacy-options flow where available. Options depend on your region, device and the ad configuration. Paid plans do not show ads. The Windows app does not integrate AdMob advertising.</p>
-<p>Subscriptions use native Store services. FORGE has no custom usage-analytics upload service or analytics opt-in toggle, and does not send journal contents to a dedicated analytics or crash-reporting SDK. Development builds can produce local diagnostics. Our Worker logs controlled error categories/status information rather than AI content or purchase proofs; hosting and Store providers may separately process operational/security data under their own policies.</p>
+<p>App-open ads are disabled by default. If enabled for supported Android/iOS free-plan features, Google AdMob may process device and advertising identifiers, IP address, ad interactions and consent signals under <a href="https://policies.google.com/privacy">Google's privacy policy</a>. FORGE uses Google's consent/privacy-options flow where available. Options depend on your region, device and the ad configuration. Paid plans do not show ads. The Windows app does not integrate AdMob advertising.</p>
+<p>Subscriptions use native Store services. FORGE has no custom usage-analytics upload service or analytics opt-in toggle, and does not send journal contents to a dedicated analytics or crash-reporting SDK. Local diagnostics contain bounded error codes and per-day feature/purchase-stage counts, without journal content or purchase proofs. They leave your device only when you choose to share a diagnostics file. Development builds can also produce local debug logs. Our Worker logs controlled error categories/status information rather than AI content or purchase proofs; hosting and Store providers may separately process operational/security data under their own policies.</p>
 </section>
 <section aria-labelledby="privacy-5">
 <h2 id="privacy-5">5. Support, backups and sharing</h2>
 <p>If you email <a href="mailto:ForgeSupp@proton.me">ForgeSupp@proton.me</a>, we receive your address and what you send. This mailbox uses Proton; see <a href="https://proton.me/legal/privacy">Proton's privacy information</a>. Please do not email passwords, purchase tokens, journal backups or private health photos. Support correspondence is used to answer requests and resolve issues, not for marketing.</p>
-<p>When you export a backup or share a progress card, the selected information is written to a file and passed to the destination you choose. Backups can contain your journal/profile data and are plaintext. FORGE attempts to remove its temporary share copies, but copies saved by you, a receiving app or the operating system are outside its control.</p>
+<p>When you export a backup or share a progress card, the selected information is written to a file and passed to the destination you choose. JSON backups and CSV exports can contain your journal/profile data and are plaintext. Optional local snapshots keep up to seven recent daily copies on your device; clearing the journal deletes them. These copies are not cloud backups and do not protect against losing the device. FORGE attempts to remove its temporary share copies, but copies saved by you, a receiving app or the operating system are outside its control.</p>
 </section>
 <section aria-labelledby="privacy-6">
 <h2 id="privacy-6">6. Retention and deletion</h2>
 <ul>
 <li><strong>Local journal:</strong> remains until you remove entries, clear local app data or uninstall, subject to operating-system behavior and copies you keep. Export a backup before destructive actions; we cannot recover a journal from a hosted copy.</li>
-<li><strong>Server records:</strong> expire according to their purpose. Daily quota records generally expire after about a day; product caches commonly last up to seven days. Device/security records can remain for approximately 180–400 days, and cached purchase records for up to 400 days after their most recent write. Active use or renewed verification can refresh these periods.</li>
+<li><strong>Server records:</strong> expire according to their purpose. Daily abuse counters generally expire after about a day, monthly allowance counters after 45 days, and product caches commonly after up to seven days. Device/security records can remain for approximately 180–400 days, and cached purchase records for up to 400 days after their most recent write. Active use or renewed verification can refresh these periods.</li>
 <li><strong>Identity and purchases:</strong> clearing the journal is not a server-data deletion request and does not reset all identity, anti-abuse or purchase state. An iOS Keychain identifier may survive reinstalling. Stores and service providers retain their own records under their policies and applicable obligations.</li>
 <li><strong>Support and user-created copies:</strong> support correspondence may remain as needed to resolve requests, maintain records and meet applicable obligations. Backups or shared copies remain wherever you saved or sent them until removed there.</li>
 </ul>
@@ -67,7 +70,7 @@
 </section>
 <section aria-labelledby="privacy-8">
 <h2 id="privacy-8">8. Children</h2>
-<p>FORGE is not intended for children under 13, or below a higher minimum age required where they live. We do not knowingly collect children's information through our online features. If you believe a child supplied information, contact us so we can investigate.</p>
+<p>Personalized profiles and AI features require an adult profile (18+). FORGE is not intended for children under 13, or below a higher minimum age required where they live. We do not knowingly collect children's information through our online features. If you believe a child supplied information, contact us so we can investigate.</p>
 </section>
 <section aria-labelledby="privacy-9">
 <h2 id="privacy-9">9. Changes and contact</h2>
