@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="forge-app-version" content="3.5.0">
+<meta name="forge-app-version" content="3.6.0">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Help with FORGE installation, subscriptions, backups and food, water, workout, sleep and weight tracking.">
 <title>FORGE Support</title>
@@ -34,7 +34,7 @@
 <section id="subscriptions" aria-labelledby="subscriptions-title">
 <h2 id="subscriptions-title">Free tracking and Pro subscriptions</h2>
 <p>Strength records, recipes, grocery checklists and home-screen widgets are free. Verified strength percentiles use named reference cohorts from <a href="https://openpowerlifting.gitlab.io/opl-csv/">OpenPowerlifting</a>; they are not rankings of FORGE users or the general population. Gym benchmarks use self-reported training data from <a href="https://fitnessvolt.com/strength-standards/">FitnessVolt</a>. Personal records and workout comparisons are available across exercises. Adults can share a summary of their best lifts with the FORGE community and remove them in Strength &amp; records.</p>
-<p>FORGE 3.5.0 keeps local tracking, barcode lookup, history, progress, Replay and backup/export free on all supported platforms. Pro adds food AI, meal plans and training tools; expiration does not lock your journal.</p>
+<p>FORGE 3.6.0 keeps local tracking, barcode lookup, history, progress, Replay and backup/export free on all supported platforms. Pro adds food AI, meal plans and training tools; expiration does not lock your journal.</p>
 <p>Pro is offered monthly or annually through the platform Store. The Windows version uses Microsoft Store subscriptions. Use the same Microsoft account that made your purchase and try the restore-purchases option in FORGE's Settings if your plan is not recognized.</p>
 <p>Manage recurring billing and cancellation at <a href="https://account.microsoft.com/services">Microsoft account services and subscriptions</a>. For Android or iOS purchases, use the subscription settings in the store where you purchased.</p>
 <p>Uninstalling FORGE does not cancel a subscription. Refund requests are handled by the store where you paid. If a restore fails, send support the error message rather than your receipt or purchase token.</p>
@@ -42,8 +42,9 @@
 <section id="data" aria-labelledby="data-title">
 <h2 id="data-title">Back up your journal before reinstalling</h2>
 <p>Your journal is stored locally on your device. Before uninstalling, resetting Windows, clearing app data or moving devices, use the backup/export option in Settings and save the file somewhere you control.</p>
-<p>Use Settings to export JSON backups or filtered CSV history. Optional local snapshots retain up to seven recent daily copies on the same device; clearing the journal removes them, and they do not replace an external backup. Use the restore option in Settings to import a FORGE JSON backup. Read the replacement warning before confirming. Keep backup files private because they can contain your health information.</p>
+<p>Use Settings to export an encrypted backup, a JSON backup, or filtered CSV history. Keep the encrypted file and its passphrase somewhere you control. Optional local snapshots retain up to seven recent daily copies on the same device; clearing the journal removes them, and they do not replace an external backup. Use the restore option in Settings to import a FORGE JSON or encrypted backup. Read the replacement warning before confirming. Keep backup files private because they can contain your health information.</p>
 <p>If data fails to load, try the app's recovery or retry action and contact support before clearing anything. We cannot recover a local journal from a server copy.</p>
+<p>Use Import workout history in Settings for Strong and Hevy CSVs. Preview the units, skipped rows and exercise names before importing. Repeat imports skip existing sessions. Community sharing excludes imported lifts unless you review and include them.</p>
 </section>
 <section aria-labelledby="features-title">
 <h2 id="features-title">AI, barcode and connection problems</h2>
@@ -58,8 +59,9 @@
 <section aria-labelledby="tracking-title">
 <h2 id="tracking-title">Goals, reminders and permissions</h2>
 <p>Meal previews show calories and protein against the selected log date’s goals. In Training, open Exercise setup to see recent sets. Grocery checklists keep manually added items when you regenerate the recipe list. Use the amount controls on a photo item to adjust its nutrition. Tap a Progress metric for its daily chart and matching records.</p>
+<p>In Recipes, record a cooked batch, then choose a portion from the batch for your Food log. Edit or remove the meal to adjust remaining servings. In Groceries, choose Use cooked servings first to subtract available portions from the checklist.</p>
 <p>You can change goals from Home and reminder preferences in Settings. If reminders do not appear, check Windows or phone notification permissions and quiet/focus settings.</p>
-<p>Camera access is used for supported photo and scanning features. Health-data integration is platform-dependent; Windows does not provide the Android or iOS health-import features.</p>
+<p>Camera access is used for photo meals, barcode scans and on-device label reading on supported phones. Windows can open saved label photos. A saved label can be looked up offline. Android and iOS can import weight and sleep and export selected completed workouts to the connected health service.</p>
 </section>
 </main>
 <footer><nav aria-label="More information"><a href="support.html">Support</a><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a></nav><p>FORGE by H4zem · <a href="mailto:ForgeSupp@proton.me">ForgeSupp@proton.me</a></p></footer>
